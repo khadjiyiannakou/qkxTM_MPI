@@ -1080,7 +1080,7 @@ void Gauge::APE_smearing(Gauge &U_tmp, LatticeInfo *latInfo){
 void Vector::Gaussian_smearing(Vector &vec_tmp, Gauge &gauge, LatticeInfo *latInfo){
 
   int nsmear = latInfo->NsmearGauss;
-  int alpha = latInfo->alphaGauss;
+  double alpha = latInfo->alphaGauss;
   double normalize = 1./(1 + 6*alpha);
 
   double *uu;
