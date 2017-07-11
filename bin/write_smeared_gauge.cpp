@@ -45,7 +45,7 @@ int main(int argc,char* argv[]){
   char file_conf_smeared[257]; 
   strcpy(file_conf,argv[1]);
   strcpy(file_conf_smeared,argv[2]);
-  char message[] = "Smeared configuration using APE smearing 3D, alpa = 0.4 , nsmear = 50 , kappa = 0.156361 , mu = 0.001500";
+  char message[] = "Smeared configuration using APE smearing 3D";
 
   MPI_Init(&argc, &argv);
   MPI_Comm_size(MPI_COMM_WORLD,&(latInfo.Nprocs));         // num. of processes taking part in the calculation
